@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+    <link href="../static/css/blogsheet.css" rel="stylesheet">
+    <link href="../static/css/lib/highlight.css" rel="stylesheet">
+</head>
+<body>
+
+{{template "nav.html" .}}
+
+<div id="main">
+    <h1>{{.Title}}</h1>
+    <div>{{.Content}}</div>
+</div>
+
+</body>
+</html>
