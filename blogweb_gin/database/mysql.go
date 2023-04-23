@@ -11,7 +11,7 @@ var db *sql.DB
 
 func InitMysql() {
 	fmt.Println("InitMysql....")
-	if db == nil {
+	if db != nil {
 		db, _ = sql.Open("mysql", "root:hanru1314@tcp(127.0.0.1:3306)/blogweb_gin?charset=utf8")
 		CreateTableWithUser()
 		CreateTableWithArticle()
